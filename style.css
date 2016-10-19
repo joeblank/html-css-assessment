@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.outer-container {
+  background: url('./img/main-bg.jpeg') center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 30px;
+  font-weight: bold;
+}
+.small-nav-container {
+position: relative;
+}
+.ham-container {
+  border: solid 1px white;
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+.ham-menu {
+  background: url('http://stealereyewear.com/img/menu-white.png') center no-repeat;
+  background-size: contain;
+  width: 35px;
+  height: 35px;
+}
+.social-container {
+ width: 75px;
+ position: absolute;
+ display: flex;
+ justify-content: space-between;
+ top: 20px;
+ right: 20px;
+}
+.twitter {
+background: url('http://www.iconsdb.com/icons/download/white/twitter-512.png') no-repeat center;
+width: 30px;
+height: 30px;
+background-size: contain;
+}
+.facebook {
+  background: url('http://www.freeiconspng.com/uploads/facebook-logo-png-white-facebook-logo-png-white-facebook-icon-png--32.png') no-repeat center;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+}
+
+
+.nav-home {}
+.nav-about {}
+.nav-story {}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.your {
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 250px;
+}
+.personal-portfolio {
+  font-size: 25px;
+  font-weight: bold;
+}
+.footer-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 116px;
+}
+.arrow-container {
+  background: white;
+  width: 55px;
+  border-radius: 50%;
+  padding: 10px 10px 10px 10px;
+  transform: rotate(270deg);
+}
+.down-arrow-button {
+  background: url('http://www.clipartsfree.net/vector/large/ftline_line_arrow_begin_Vector_Clipart.png') no-repeat center;
+  background-size: contain;
+  padding: 2px;
+  width: 35px;
+  height: 35px;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 700px) {
+  .nav-container {
+    display: none;
+  }
+  .small-nav-container {
+    display: block;
+  }
+  .main-container {
+    padding-top: 65px;
+  }
+
+}
+
+@media (min-width: 700px) {
+  .small-nav-container {
+    display: none;
+  }
+}
